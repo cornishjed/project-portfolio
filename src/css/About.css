@@ -1,0 +1,12 @@
+#content__about {
+    padding: 20px;
+
+    #content__about__image {
+        width: 200px;
+        height: 240px;
+
+        img {
+            height: inherit;
+        }
+    }
+}
