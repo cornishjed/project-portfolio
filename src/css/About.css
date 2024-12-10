@@ -1,5 +1,7 @@
 #content__about {
     padding: 20px;
+    display: flex;
+    gap: 20px;
 
     #content__about__image {
         width: 200px;
@@ -7,6 +9,14 @@
 
         img {
             height: inherit;
+        }
+    }
+
+    #content__about__bio {
+        text-align: left;
+
+        p {
+            margin: 0;
         }
     }
 }

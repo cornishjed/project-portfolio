@@ -7,7 +7,7 @@ import { Skills } from './ts/Skills';
 import { Contact } from './ts/Contact';
 
 function App() {
-  const [contentState, setContentState] = useState<string>();
+  const [contentState, setContentState] = useState<string>("About Me");
   const onSwitchContent = (link: string) => {
     setContentState(link);
   }
@@ -24,7 +24,7 @@ function App() {
         <nav className='navbar'>
           {contentHeaders.map((header) => {
             return (
-              <a className="navbar__button" onClick={() => onSwitchContent(header)}>
+              <a {...contentState === header ? {className:"navbar__button active"} : {className:"navbar__button"}} onClick={() => onSwitchContent(header)}>
                 {header}
               </a>
             )
